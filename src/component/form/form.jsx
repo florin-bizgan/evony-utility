@@ -1,5 +1,6 @@
 import { Field, Formik } from "formik";
 import { SmartRadio } from "../smart-radio";
+import { formData } from "./form.data";
 import * as S from "./form.style";
 
 const initialValues = {
@@ -24,13 +25,16 @@ const Form = () => {
             {/* <Field type="radio" id='ground' name='troopType' value="ground"/>
         <label htmlFor="ground">Ground</label> */}
 
-            {["ground", "cavalry", "archery", "siege"].map((troopType) => {
-              const str = `${troopType[0].toUpperCase()}${troopType.slice(1)}`
+            {formData.map(({ resource, label, troopType }) => {
               return (
-                <SmartRadio label={str} name="troopType" who={troopType} />
+                <SmartRadio
+                  label={label}
+                  name="troopType"
+                  who={troopType}
+                  resource={resource}
+                />
               );
             })}
-
           </div>
           <div>
             <button type="submit">Push me</button>
