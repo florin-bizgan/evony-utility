@@ -1,8 +1,9 @@
 import React from 'react'
 import { createRoot } from 'react-dom/client'
+import { Utility } from './component'
 
-const App = () => <div>Helooo</div>
-const app = <App />
+
+const app = <Utility />
 const here = document.querySelector('#here')
 
 const root = createRoot(here)
