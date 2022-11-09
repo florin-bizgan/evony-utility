@@ -1,3 +1,9 @@
-const App = () => <div>Helooo</div>
+import { Form } from "..";
 
-export default App
+const App = () => (
+  <div>
+    <Form />
+  </div>
+);
+
+export default App;
