@@ -1,47 +1,58 @@
 import { Field, Formik } from "formik";
+import { useState } from "react";
+import { findResource } from "../../util/form";
+import { prettyNumber } from "../../util/number";
 import { SmartRadio } from "../smart-radio";
-import { formData } from "./form.data";
+import { formData, initialValues } from "./form.data";
 import * as S from "./form.style";
 
-const initialValues = {
-  quantity: 0,
-  troopType: "",
-};
-
 const Form = () => {
+  const [result, showResult] = useState({});
+
   const printeaza = (values) => {
-    console.log("Eu sunt printeaza", values);
+    const { resource } = findResource(values.troopType, formData);
+
+    showResult({
+      food: values.quantity * resource.food,
+      lumber: values.quantity * resource.lumber,
+      stone: values.quantity * resource.stone,
+      ore: values.quantity * resource.ore,
+    });
   };
+
   return (
-    <Formik initialValues={initialValues} onSubmit={printeaza}>
-      {() => (
-        <S.Form>
-          <h1>This is something</h1>
-          <p>Vai ca nu stiu</p>
-          <div>
-            <label htmlFor="quantity">Number of soldiers</label>
-            <Field type="number" id="quantity" name="quantity" />
-
-            {/* <Field type="radio" id='ground' name='troopType' value="ground"/>
-        <label htmlFor="ground">Ground</label> */}
-
-            {formData.map(({ resource, label, troopType }) => {
-              return (
-                <SmartRadio
-                  label={label}
-                  name="troopType"
-                  who={troopType}
-                  resource={resource}
-                />
-              );
-            })}
-          </div>
-          <div>
-            <button type="submit">Push me</button>
-          </div>
-        </S.Form>
-      )}
-    </Formik>
+    <div>
+      <h1>This is something</h1>
+      <p>Food: {prettyNumber(result.food)}</p>
+      <p>Lumber: {prettyNumber(result.lumber)}</p>
+      <p>Stone: {prettyNumber(result.stone)}</p>
+      <p>Ore: {prettyNumber(result.ore)}</p>
+      <Formik initialValues={initialValues} onSubmit={printeaza}>
+        {() => (
+          <S.Form>
+            <div>
+              <label htmlFor="quantity">Number of soldiers</label>
+              <Field type="number" id="quantity" name="quantity" />
+              {/* <Field type="radio" id='ground' name='troopType' value="ground"/>
+          <label htmlFor="ground">Ground</label> */}
+              {formData.map(({ resource, label, troopType }) => {
+                return (
+                  <SmartRadio
+                    label={label}
+                    name="troopType"
+                    who={troopType}
+                    resource={resource}
+                  />
+                );
+              })}
+            </div>
+            <div>
+              <button type="submit">Push me</button>
+            </div>
+          </S.Form>
+        )}
+      </Formik>
+    </div>
   );
 };
 

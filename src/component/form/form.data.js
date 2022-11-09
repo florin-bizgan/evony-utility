@@ -1,3 +1,7 @@
+export const initialValues = {
+  quantity: 0,
+  troopType: "",
+};
 export const formData = [
   {
     resource: {
