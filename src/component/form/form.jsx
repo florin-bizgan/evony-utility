@@ -7,7 +7,6 @@ import { SmartRadio } from "../smart-radio";
 import { formData, initialValues } from "./form.data";
 import * as S from "./form.style";
 
-
 const Form = () => {
   const [result, showResult] = useState({});
 
@@ -49,7 +48,7 @@ const Form = () => {
               })}
             </div>
             <div>
-              <Button color='fruitSalad' name='Press Me'></Button>
+              <Button color="fruitSalad" onClick="submit">Click Me</Button>
             </div>
           </S.Form>
         )}

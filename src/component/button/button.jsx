@@ -1,9 +1,9 @@
 import * as S from './button.style'
 
-const Button = ({name, color, href, id, radius}) => {
+const Button = ({title, children, color, onClick, href, id}) => {
   return (
-    <S.Button color={color}>
-      {name}
+    <S.Button color={color} onClick={onClick} title={title}>
+      {children}
     </S.Button>
   )
 }
