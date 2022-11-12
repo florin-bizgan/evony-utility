@@ -4,7 +4,7 @@ This will calculate the required resources to create a certain type of troop.
 
 ## What is Evony?
 
-Evony is a game on Android and iOS that I play here and there and this tool aims to help players to plan better they future improvements.
+Evony is a game on Android and iOS that I play here and there and this tool aims to help players to plan better they're future improvements.
 
 This first update is something like a calculator where the player can input the desired number of troops and the quantity and will get in return the entire amount of resources required.
 
