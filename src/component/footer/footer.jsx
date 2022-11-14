@@ -1,10 +1,9 @@
 import * as S from './footer.style'
 
-const Footer = ({color, name}) => {
+const Footer = ({color, children, name}) => {
   return (
     <S.Footer color={color}>
-      <h1>Footer Here</h1>
-      <h2>-----------</h2>
+      {children}
     </S.Footer>
   )
 }
