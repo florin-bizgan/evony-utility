@@ -1,25 +1,40 @@
-import { Form, Footer, Button, Flex, Navbar } from "..";
+import {
+  Form,
+  Footer,
+  Button,
+  Flex,
+  Navbar,
+  Home,
+  About,
+  Tools,
+  Contact,
+} from "..";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-const App = () => {
+const Utility = () => {
   return (
-    <div>
+    <Router>
       <Navbar />
-      <Flex>
-        <Form />
-      </Flex>
-      <Flex column='row' justify='flex-start' gap='5' padding='10'>
-        <Button color='milanoRed'>Download</Button>
-        <Button color='lavenderMagenta'>Download</Button>
-        <Button color='cornflowerBlue'>Download</Button>
-        <Button color='fruitSalad'>Download</Button>
-      </Flex>
-
+      <Switch>
+        <Route exact path='/home'>
+          <Home />
+        </Route>
+        <Route exact path='/about'>
+          <About />
+        </Route>
+        <Route exact path='/tools'>
+          <Tools />
+        </Route>
+        <Route exact path='/contact'>
+          <Contact />
+        </Route>
+      </Switch>
       <Footer color='shark'>
-        <h1>Footer Here</h1>
-        <h2>-----------</h2>
+        <h1>©Florin Bizgan. All rights reserved </h1>
+        <h3>2022</h3>
       </Footer>
-    </div>
+    </Router>
   );
 };
 
-export default App;
+export default Utility;

@@ -1,8 +1,5 @@
 import styled from "styled-components";
 
-
-
-
 export const Flex = styled.div`
   display: flex;
   justify-content: ${({ justify }) => justify};
@@ -18,4 +15,4 @@ export const Flex = styled.div`
   gap: 5px;
   padding: 10px;
   flex-direction: column; */
-`
+`;

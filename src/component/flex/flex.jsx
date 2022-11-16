@@ -1,4 +1,4 @@
-import * as S from './flex.style';
+import * as S from "./flex.style";
 
 const Flex = ({ padding, children, column, justify, align, gap }) => {
   return (
@@ -13,6 +13,5 @@ const Flex = ({ padding, children, column, justify, align, gap }) => {
     </S.Flex>
   );
 };
-
 
 export default Flex;

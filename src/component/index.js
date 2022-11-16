@@ -6,3 +6,7 @@ export { Footer } from "./footer";
 export { Flex } from "./flex";
 export { Background } from "./background";
 export { Navbar } from "./navbar";
+export { About } from "./about";
+export { Home } from "./home";
+export { Tools } from "./tools";
+export { Contact } from "./contact";
