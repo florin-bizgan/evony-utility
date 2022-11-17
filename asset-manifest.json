@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.5e7e1fb9.css",
-    "main.js": "/static/js/main.c2000fd2.js",
+    "main.css": "/static/css/main.c95c454e.css",
+    "main.js": "/static/js/main.c76ddbe6.js",
+    "static/media/evo_bg.jpg": "/static/media/evo_bg.eccfbb4fd347a58b208f.jpg",
     "index.html": "/index.html",
-    "main.5e7e1fb9.css.map": "/static/css/main.5e7e1fb9.css.map",
-    "main.c2000fd2.js.map": "/static/js/main.c2000fd2.js.map"
+    "main.c95c454e.css.map": "/static/css/main.c95c454e.css.map",
+    "main.c76ddbe6.js.map": "/static/js/main.c76ddbe6.js.map"
   },
   "entrypoints": [
-    "static/css/main.5e7e1fb9.css",
-    "static/js/main.c2000fd2.js"
+    "static/css/main.c95c454e.css",
+    "static/js/main.c76ddbe6.js"
   ]
 }
