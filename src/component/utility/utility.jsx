@@ -1,21 +1,11 @@
-import {
-  Form,
-  Footer,
-  Button,
-  Flex,
-  Navbar,
-  Home,
-  About,
-  Tools,
-  Contact,
-} from "..";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Footer, Navbar, Home, About, Tools, Contact } from "..";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 const Utility = () => {
   return (
     <Router>
       <Navbar />
-      <Switch>
+      <Routes>
         <Route exact path='/home'>
           <Home />
         </Route>
@@ -28,7 +18,7 @@ const Utility = () => {
         <Route exact path='/contact'>
           <Contact />
         </Route>
-      </Switch>
+      </Routes>
       <Footer color='shark'>
         <h1>©Florin Bizgan. All rights reserved </h1>
         <h3>2022</h3>
