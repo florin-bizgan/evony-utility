@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
 export const Home = styled.div`
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; */
   padding: 10px;
-
-  height: 90vh;
+  /* border: rgba(255, 255, 255, 0.5); */
+  & .container {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 25px;
+    border-radius: 10px;
+    color: black;
+  }
 `;

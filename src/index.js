@@ -1,14 +1,5 @@
 import React from "react";
-import { createRoot } from "react-dom/client";
-import {
-  Utility,
-  Footer,
-  Navbar,
-  Home,
-  About,
-  Tools,
-  Contact,
-} from "./component";
+import { Footer, Navbar, Home, About, Tools, Contact } from "./component";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";

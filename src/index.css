@@ -7,7 +7,14 @@
 }
 
 body {
-  background-color: rgba(24, 22, 22, 0.475);
+  /* background-color: lightsteelblue; */
+  /* background-image: url(https://wallpapercave.com/wp/wp9382633.jpg);
+  background-repeat: no-repeat; */
+
+  background-image: url("./data/image/evo_bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 a,

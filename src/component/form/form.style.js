@@ -11,4 +11,9 @@ export const Form = styled(FormikForm)`
   gap: 16px;
   flex-direction: column;
   background-color: white;
+
+  & p {
+    color: red;
+    background-color: white;
+  }
 `;

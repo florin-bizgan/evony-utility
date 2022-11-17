@@ -8,7 +8,7 @@ const Home = ({ children }) => {
         <div>
           <img src='https://www.evony.com/image/img/evonyLogo.png' alt='' />
         </div>
-        <div>
+        <div className='container'>
           <h1>Evony</h1>
           <p>
             Evony (formerly known as <strong>Civony</strong>) is an Adobe

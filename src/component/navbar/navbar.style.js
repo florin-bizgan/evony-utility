@@ -6,7 +6,6 @@ export const Navbar = styled.div`
   height: 55px;
   color: white;
   font-size: 32px;
-  padding-bottom: 25px;
 
   display: flex;
   flex-direction: row;

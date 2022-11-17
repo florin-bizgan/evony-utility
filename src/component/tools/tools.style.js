@@ -4,6 +4,8 @@ export const Tools = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  height: 80vh;
+  /* background-color:rgba(255, 255, 255, 0.7); */
+  background: rgba(255, 255, 255, 0.7);
+  margin: 10px;
+  border-radius: 10px;
 `;

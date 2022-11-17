@@ -14,10 +14,8 @@ export const Footer = styled.div`
   color: white;
   position: fixed;
   bottom: 0;
-  left: 0;
-  right: 0;
 
-  height: 100px;
+  height: auto;
   width: 100%;
   display: flex;
   justify-content: center;

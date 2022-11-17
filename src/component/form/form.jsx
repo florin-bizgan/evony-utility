@@ -32,15 +32,15 @@ const Form = () => {
         {() => (
           <S.Form>
             <div>
-              <label htmlFor="quantity">Number of soldiers </label>
-              <Field type="number" id="quantity" name="quantity" />
+              <label htmlFor='quantity'>Number of soldiers </label>
+              <Field type='number' id='quantity' name='quantity' />
               {/* <Field type="radio" id='ground' name='troopType' value="ground"/>
           <label htmlFor="ground">Ground</label> */}
               {formData.map(({ resource, label, troopType }) => {
                 return (
                   <SmartRadio
                     label={label}
-                    name="troopType"
+                    name='troopType'
                     who={troopType}
                     resource={resource}
                   />
@@ -48,7 +48,9 @@ const Form = () => {
               })}
             </div>
             <div>
-              <Button color="fruitSalad" onClick="submit">Click Me</Button>
+              <Button color='fruitSalad' onClick='submit'>
+                Click Me
+              </Button>
             </div>
           </S.Form>
         )}
