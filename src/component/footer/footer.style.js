@@ -12,8 +12,9 @@ const colorMap = {
 export const Footer = styled.div`
   background-color: ${({ color }) => colorMap[color]};
   color: white;
-  position: fixed;
+  position:relative;
   bottom: 0;
+  width: 100%;
 
   height: auto;
   width: 100%;

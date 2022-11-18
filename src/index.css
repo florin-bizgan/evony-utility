@@ -4,6 +4,7 @@
 * {
   margin: 0;
   font-family: "Quicksand";
+  
 }
 
 body {
@@ -15,6 +16,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  
 }
 
 a,

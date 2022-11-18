@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Contact = styled.div`
   color: white;
+  min-height: 100vh;
 
   @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
