@@ -6,6 +6,7 @@ export const Tools = styled.div`
   justify-content: center;
   /* background-color:rgba(255, 255, 255, 0.7); */
   background: rgba(255, 255, 255, 0.7);
-  margin: 10px;
-  border-radius: 10px;
+  /* margin: 10px;
+  border-radius: 10px; */
+  min-height: 100vh;
 `;

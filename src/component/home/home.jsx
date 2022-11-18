@@ -5,10 +5,10 @@ const Home = ({ children }) => {
   return (
     <S.Home>
       <Flex justify='center' align='center' column='column' gap='145'>
-        <div>
-          <img src='https://www.evony.com/image/img/evonyLogo.png' alt='' />
-        </div>
         <div className='container'>
+          <div align='center'>
+            <img src='https://www.evony.com/image/img/evonyLogo.png' alt='' />
+          </div>
           <h1>Evony</h1>
           <p>
             Evony (formerly known as <strong>Civony</strong>) is an Adobe

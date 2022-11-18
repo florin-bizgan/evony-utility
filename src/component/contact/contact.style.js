@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const Contact = styled.div`
   color: white;
   min-height: 100vh;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 25px;
+  /* border-radius: 10px; */
+  /* margin: 10px; */
 
   @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 

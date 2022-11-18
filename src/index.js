@@ -6,20 +6,18 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("here"));
 root.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path='/' element={Home} />
-        <Route path='/home' element={Home} />
-        <Route path='/about' element={About} />
-        <Route path='/tools' element={Tools} />
-        <Route path='/contact' element={Contact} />
-      </Routes>
-      <Footer color='shark'>
-        <h1>©Florin Bizgan. All rights reserved </h1>
-        <h3>2022</h3>
-      </Footer>
-    </BrowserRouter>
-  </React.StrictMode>
+  <BrowserRouter>
+    <Navbar />
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/home' element={<Home />} />
+      <Route path='/about' element={<About />} />
+      <Route path='/tools' element={<Tools />} />
+      <Route path='/contact' element={<Contact />} />
+    </Routes>
+    <Footer color='shark'>
+      <h1>©Florin Bizgan. All rights reserved </h1>
+      <h3>2022</h3>
+    </Footer>
+  </BrowserRouter>
 );
