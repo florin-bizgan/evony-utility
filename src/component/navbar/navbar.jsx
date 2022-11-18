@@ -1,20 +1,22 @@
+import { Link } from "react-router-dom";
 import * as S from "./navbar.style";
 
 const Navbar = ({ children }) => {
   return (
     <S.Navbar>
-      <a href='/home'>
+      <Link></Link>
+      <Link to='/home'>
         <p>Home</p>
-      </a>
-      <a href='/about'>
+      </Link>
+      <Link to='/about'>
         <p>About</p>
-      </a>
-      <a href='/tools'>
+      </Link>
+      <Link to='/tools'>
         <p>Tools</p>
-      </a>
-      <a href='/contact'>
+      </Link>
+      <Link to='/contact'>
         <p>Contact</p>
-      </a>
+      </Link>
       {children}
     </S.Navbar>
   );
