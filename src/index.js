@@ -8,9 +8,11 @@ const root = ReactDOM.createRoot(document.getElementById("here"));
 root.render(
   <StrictMode>
     <BrowserRouter>
-      <Navbar />
-      {/* <nav className='navbar'>
-        <Link to='/'><p>Home</p></Link>
+      {/* <Navbar /> */}
+      <nav className='navbar'>
+        <Link to='/'>
+          <p>Home</p>
+        </Link>
         <Link to='/about'>
           <p>About</p>
         </Link>
@@ -20,7 +22,7 @@ root.render(
         <Link to='/contact'>
           <p>Contact</p>
         </Link>
-      </nav> */}
+      </nav>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/home' element={<Home />} />
