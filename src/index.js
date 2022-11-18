@@ -2,12 +2,26 @@ import React from "react";
 import { Footer, Navbar, Home, About, Tools, Contact } from "./component";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("here"));
 root.render(
   <BrowserRouter>
-    <Navbar />
+    {/* <Navbar /> */}
+    <nav className='navbar'>
+      <Link to='/'>
+        <p className='nav'>Home</p>
+      </Link>
+      <Link to='/about'>
+        <p className='nav'>About</p>
+      </Link>
+      <Link to='/tools'>
+        <p className='nav'>Tools</p>
+      </Link>
+      <Link to='/contact'>
+        <p className='nav'>Contact</p>
+      </Link>
+    </nav>
     <Routes>
       <Route path='/' element={<Home />} />
       <Route path='/home' element={<Home />} />

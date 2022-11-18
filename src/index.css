@@ -4,7 +4,6 @@
 * {
   margin: 0;
   font-family: "Quicksand";
-  
 }
 
 body {
@@ -16,7 +15,25 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  
+}
+
+.navbar {
+  background-color: #21252b;
+  margin: 0;
+  height: 55px;
+  color: white;
+  font-size: 32px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+p:only-of-type:hover {
+  color: #f1356d;
+  cursor: pointer;
 }
 
 a,
