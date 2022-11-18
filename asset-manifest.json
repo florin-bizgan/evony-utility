@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/evony-utility/static/css/main.b4f580b5.css",
-    "main.js": "/evony-utility/static/js/main.8e9eea02.js",
+    "main.css": "/evony-utility/static/css/main.39075a47.css",
+    "main.js": "/evony-utility/static/js/main.bafcba76.js",
     "static/media/evo_bg.jpg": "/evony-utility/static/media/evo_bg.eccfbb4fd347a58b208f.jpg",
     "index.html": "/evony-utility/index.html",
-    "main.b4f580b5.css.map": "/evony-utility/static/css/main.b4f580b5.css.map",
-    "main.8e9eea02.js.map": "/evony-utility/static/js/main.8e9eea02.js.map"
+    "main.39075a47.css.map": "/evony-utility/static/css/main.39075a47.css.map",
+    "main.bafcba76.js.map": "/evony-utility/static/js/main.bafcba76.js.map"
   },
   "entrypoints": [
-    "static/css/main.b4f580b5.css",
-    "static/js/main.8e9eea02.js"
+    "static/css/main.39075a47.css",
+    "static/js/main.bafcba76.js"
   ]
 }
