@@ -10,3 +10,5 @@ This first update is something like a calculator where the player can input the 
 
 This will be just the first phase of this tool where in the future you can do more things and not just to find the amount of ressources.
 In time you will be able to discover also the required amount of time to train those troops, all levels from Lv1 to Lv15.
+
+##....
