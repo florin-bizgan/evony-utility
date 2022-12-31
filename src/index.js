@@ -3,26 +3,19 @@ import { Footer, Navbar, Home, About, Tools, Contact } from "./component";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import { Navigation } from "./component/navbar/navbar.style";
 
 const root = ReactDOM.createRoot(document.getElementById("here"));
 root.render(
   <StrictMode>
     <BrowserRouter>
-      <Navbar />
-      {/* <nav className='navbar'>
-        <Link to='/'>
-          <p>Home</p>
-        </Link>
-        <Link to='/about'>
-          <p>About</p>
-        </Link>
-        <Link to='/tools'>
-          <p>Tools</p>
-        </Link>
-        <Link to='/contact'>
-          <p>Contact</p>
-        </Link>
-      </nav> */}
+      <Navigation>
+        <Link to={"/"}>Home</Link>
+        <Link to={"/about"}>About</Link>
+        <Link to={"/tools"}>Tools</Link>
+        <Link to={"/contact"}>Contact</Link>
+      </Navigation>
+
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/home' element={<Home />} />
